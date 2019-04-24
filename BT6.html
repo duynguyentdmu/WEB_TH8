@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bt6</title>
+	<script type="text/javascript" language="javascript">
+		function hello(){
+			document.write('Hello.');
+			document.write('Welcome to the hello() function.');
+			return;
+		}
+		function sum_up (one, two)
+		{
+			var result = one + two;
+			return result;
+		}
+		function sum_all()
+		{
+			var loop=0, sum = 0 ;
+			for (loop = arguments.length -1;loop>=0;loop-1)
+				sum += arguments[loop];
+			return sum;
+		}//add it up now
+
+		hello();
+		var total = sum_up(7,9);
+		document.write(total + ' '+ sum_up(8,15));
+		document.write(' '+sum_all(1,5,8,7,6));
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
