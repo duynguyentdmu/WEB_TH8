@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bt18</title>
+	<script type="text/javascript" language="javascript">
+		function disptime(){
+			var time = new Date()
+			var hour = time.getHours()
+			var minite = time.getMinutes()
+			var second = time.getSeconds()
+			var temp = "" + ((hour > 12) ? hour -12: hour)
+			temp +=((minite < 10) ? ":0" : ":")+minite
+			temp +=((second <10) ?":0" : ":")+second
+			temp +=(hour >= 12) ? "P.M":"A.M"
+			document.MyPage.digits.value = temp
+			id = setTimeout("disptime"*,1000)
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
