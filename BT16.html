@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bt16</title>
+	<script type="text/javascript" language="javascript">
+		function doCalc(x)
+		{
+			var a;
+			a = Math.PI * x * x;
+			alert ("The area of a circle with a radius of " + x + " "+"is"+" "+ a);
+		}
+	</script>
+</head>
+<body bgcolor="white">
+	<form>
+		Enter the radius of the circle : 
+		<input type="text" name="rad">
+		<br><br>
+		<input type="button" value="Display Area" onclick="doCalc(rad.value)">
+	</form>
+	
+</body>
+</html>

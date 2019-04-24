@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bt17</title>
+	<script type="text/javascript" language="javascript">
+		function show(value)
+		{
+			with(Math)
+			document.write("Absolute value of a number "+ value+" is : "+abs(eval(value)));
+		}
+	</script>
+</head>
+<body>
+	<form >
+		<b>Enter Value </b>
+		<input type="text" name="text1" size="20">
+		<p>
+			<input type="button" name="button1" value="Absolute Value" onclick="show(this.form.text1.value)">
+		</p>
+	</form>
+</body>
+</html>

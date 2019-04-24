@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bt9</title>
+</head>
+<body bgcolor="#ffffff"> 
+	<script type="text/javascript" language="javascript">
+		var url_names = new Array("yahoo.com","hotmail.com","google.com");
+			var a_url;
+			for (var loop = 0;loop <url_names.length;loop++)
+			{
+				//make the name of a url, for example 
+				a_url = "http://www." + url_names[loop] + "/";
+				//open a window
+				var new_window = open(a_url,"new_window","width=300, height=300");
+				//wait for the click
+				alert ("hit ok for the next site");
+			}
+	</script>
+</body>
+</html>
